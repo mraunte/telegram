@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'rubygems'
 require 'telegram/bot'
-require 'SQLite3'
+require 'sqlite3'
 require_relative 'const.rb'
 require_relative 'plug.rb'
 db = SQLite3::Database.new 'users.db'

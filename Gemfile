@@ -5,7 +5,15 @@ source 'http://gems.rubyforge.org'
 
 
 # gem "rails"
+gem "activeresource"
 gem 'telegram-bot-ruby'
-gem 'sqlite3'
-gem "rack", "1.0.1"
-gem "rails", ">=2.3.0"
+gem "rack"
+gem "rails"
+
+group :production do
+  gem "pg"
+end
+
+group :development, :test do
+  gem "sqlite3"
+end

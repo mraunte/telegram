@@ -26,6 +26,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     ice_nine (0.11.2)
     multipart-post (2.0.0)
+    pg (0.19.0)
     rack (1.0.1)
     rails (2.3.5)
       actionmailer (= 2.3.5)
@@ -50,8 +51,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rack (= 1.0.1)
-  rails (>= 2.3.0)
+  activeresource
+  pg
+  rack
+  rails
   sqlite3
   telegram-bot-ruby
 

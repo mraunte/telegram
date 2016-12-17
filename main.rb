@@ -1,7 +1,7 @@
 # coding: utf-8
 require 'rubygems'
 require 'telegram/bot'
-require 'sqlite3'
+require 'SQLite3'
 require_relative 'const.rb'
 require_relative 'plug.rb'
 db = SQLite3::Database.new 'users.db'
@@ -55,12 +55,6 @@ Telegram::Bot::Client.run(token) do |bot|
           else  
             bot.api.send_message(chat_id:message.chat.id,text:'Неверный идентификатор')
           end
-
-
-
-        when 'Студент'
-          db.execute("INSERT INTO users(who_it", 0)
-          main_menu.call @student, 'Выберите курс'
 
 
   end
